@@ -79,16 +79,27 @@
 
 
 
-<meta name="description" content="Never Back Down">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Attack On Titan">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="人类之所以能够在历史变迁中逐步进化为高级文明，其中必不可少的因素就是 语言以及制度的建立完善那么计算机时代，计算机之间进行交流，共同发展谋求进步，语言和制度也是至关重要制度在互联网中被称之为协议，今天我们要讨论的就是 在计算机网络中 可算得上是 老大哥的 TCP/IP协议就是这位老大哥维持着互联网通信中的秩序，让信息有条不紊地进行传输   TCP/IP协议族将 TCP/IP 称之为协议族更为恰当，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="阿牛教你 TCP&#x2F;IP">
+<meta property="og:url" content="http://yoursite.com/2018/02/27/阿牛教你TCPIP/index.html">
 <meta property="og:site_name" content="Attack On Titan">
-<meta property="og:description" content="Never Back Down">
+<meta property="og:description" content="人类之所以能够在历史变迁中逐步进化为高级文明，其中必不可少的因素就是 语言以及制度的建立完善那么计算机时代，计算机之间进行交流，共同发展谋求进步，语言和制度也是至关重要制度在互联网中被称之为协议，今天我们要讨论的就是 在计算机网络中 可算得上是 老大哥的 TCP/IP协议就是这位老大哥维持着互联网通信中的秩序，让信息有条不紊地进行传输   TCP/IP协议族将 TCP/IP 称之为协议族更为恰当，">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/TCPIP%E5%8D%8F%E8%AE%AE/physicalmedia.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/TCPIP%E5%8D%8F%E8%AE%AE/eip3.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/TCPIP%E5%8D%8F%E8%AE%AE/dataframe.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/TCPIP%E5%8D%8F%E8%AE%AE/internet.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/TCPIP%E5%8D%8F%E8%AE%AE/eip4.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/TCPIP%E5%8D%8F%E8%AE%AE/ipaddress.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/TCPIP%E5%8D%8F%E8%AE%AE/eip5.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/TCPIP%E5%8D%8F%E8%AE%AE/eip6.jpg?raw=true">
+<meta property="og:image" content="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/TCPIP%E5%8D%8F%E8%AE%AE/internetapplication.jpg?raw=true">
+<meta property="og:updated_time" content="2018-02-27T07:39:29.600Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Attack On Titan">
-<meta name="twitter:description" content="Never Back Down">
+<meta name="twitter:title" content="阿牛教你 TCP&#x2F;IP">
+<meta name="twitter:description" content="人类之所以能够在历史变迁中逐步进化为高级文明，其中必不可少的因素就是 语言以及制度的建立完善那么计算机时代，计算机之间进行交流，共同发展谋求进步，语言和制度也是至关重要制度在互联网中被称之为协议，今天我们要讨论的就是 在计算机网络中 可算得上是 老大哥的 TCP/IP协议就是这位老大哥维持着互联网通信中的秩序，让信息有条不紊地进行传输   TCP/IP协议族将 TCP/IP 称之为协议族更为恰当，">
+<meta name="twitter:image" content="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/TCPIP%E5%8D%8F%E8%AE%AE/physicalmedia.jpg?raw=true">
 
 
 
@@ -118,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/27/阿牛教你TCPIP/"/>
 
 
 
 
 
-  <title>Attack On Titan</title>
+  <title>阿牛教你 TCP/IP | Attack On Titan</title>
   
 
 
@@ -153,8 +164,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -237,9 +247,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -269,9 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/27/阿牛教你TCPIP/" itemprop="url">阿牛教你 TCP/IP</a></h1>
+          <h1 class="post-title" itemprop="name headline">阿牛教你 TCP/IP</h1>
         
 
         <div class="post-meta">
@@ -319,6 +327,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/02/27/阿牛教你TCPIP/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/02/27/阿牛教你TCPIP/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -354,9 +372,7 @@
       
 
       
-        
-          
-            <p>人类之所以能够在历史变迁中逐步进化为高级文明，其中必不可少的因素就是 <strong><em>语言以及制度的建立完善</em></strong><br><strong><em>那么计算机时代，计算机之间进行交流，共同发展谋求进步，语言和制度也是至关重要<br>制度在互联网中被称之为协议，今天我们要讨论的就是 在计算机网络中 可算得上是 老大哥的 TCP/IP协议</em></strong><br>就是这位老大哥维持着互联网通信中的秩序，让信息有条不紊地进行传输  </p>
+        <p>人类之所以能够在历史变迁中逐步进化为高级文明，其中必不可少的因素就是 <strong><em>语言以及制度的建立完善</em></strong><br><strong><em>那么计算机时代，计算机之间进行交流，共同发展谋求进步，语言和制度也是至关重要<br>制度在互联网中被称之为协议，今天我们要讨论的就是 在计算机网络中 可算得上是 老大哥的 TCP/IP协议</em></strong><br>就是这位老大哥维持着互联网通信中的秩序，让信息有条不紊地进行传输  </p>
 <h2 id="TCP-IP协议族"><a href="#TCP-IP协议族" class="headerlink" title="TCP/IP协议族"></a>TCP/IP协议族</h2><p>将 TCP/IP 称之为协议族更为恰当，因为其中除了主要的TCP, IP协议之外，还包含有其他大量协议<br>大家共同构成了 这么一个网络协议<br>简而言之，TCP/IP 协议让电子设备走入互联网，走向城市<br>TCP/IP 协议分为四层，分别是<strong><em>应用层，传输层，网络层，数据链路层</em></strong><br>本文我们来了解，一个消息是怎么进行传输，最终到达目的地  </p>
 <h2 id="局域网-村民通信"><a href="#局域网-村民通信" class="headerlink" title="局域网-村民通信"></a>局域网-村民通信</h2><p>有一个文静祥和的小村庄，叫它牛家村吧，在这个村庄里面人民安居乐业<br>某天 阿牛家里的庄稼成熟了，需要收割，一个人显然是不够的，妻子需要洗衣做饭，儿子出去上学了<br>这个时候他想到了自己的好基友，隔着几家的铁柱，于是呀，阿牛就朝着 铁柱家的方向吼道：铁柱，今天帮我收割粮食吧<br>铁柱听到阿牛的呼喊，也朝着阿牛家的方向喊到：OK，你先把前两天欠我的酒钱还来<br>在这个通信基本靠吼的村子，基本也能满足平时生活上的需求<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">局域网就好比一个小村子，与外界网络隔断开来，网络下的主机们进行交流的方式也基本靠吼（广播方式）</span><br></pre></td></tr></table></figure></p>
 <h3 id="下面引入两个计算机网络分层"><a href="#下面引入两个计算机网络分层" class="headerlink" title="下面引入两个计算机网络分层"></a>下面引入两个计算机网络分层</h3><ol>
@@ -409,8 +425,6 @@
 </ul>
 </blockquote>
 
-          
-        
       
     </div>
     
@@ -427,212 +441,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/05/Hexo博客搭建/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Dick Chen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://img.mp.itc.cn/upload/20170422/9730ea5933ee4fafbd5197004a2fd42c_th.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Attack On Titan">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/05/Hexo博客搭建/" itemprop="url">Hexo + Github + 腾讯云 == 个人博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-05T15:32:19+08:00">
-                2018-02-05
-              </time>
+              <a href="/2018/02/05/Hexo博客搭建/" rel="next" title="Hexo + Github + 腾讯云 == 个人博客">
+                <i class="fa fa-chevron-left"></i> Hexo + Github + 腾讯云 == 个人博客
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/学习/" itemprop="url" rel="index">
-                    <span itemprop="name">学习</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/02/05/Hexo博客搭建/" class="leancloud_visitors" data-flag-title="Hexo + Github + 腾讯云 == 个人博客">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>作为一名程序员，我相信大家很多时间都处于不断学习进步的过程<br>那么学习中，难免有不少感悟及收获，想试着记录下来，方便日后与志同道合的小伙伴分享交流<br>很多人想到了博客，虽然现在国内的博客平台已经有不少，但就我自身的感受而言，<br>大多博客都不够简约美观，我只是想简单记录学习心得罢了，你给我整那么多七七八八的功能干啥<br>这个时候，我发现了 Hexo 这个强大的平台，十分适合像我这种想要个性化定制博客的程序猿</p>
-<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><h3 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h3><blockquote>
-<ul>
-<li>node.js</li>
-<li>git<h3 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h3>在 windows 环境下安装Hexo,步骤简单，打开cmd</li>
-</ul>
-<ol>
-<li>由于 Hexo 基于 node.js，因此当安装完 node.js 环境之后，我们只需要使用下面命令安装 Hexo<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-</blockquote>
-<ol>
-<li>验证 Hexo 安装是否成功，在控制台输入 hexo v 命令，看是否出现版本信息<br><img src="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/Hexo%20Blog/hexoversion.PNG?raw=true" alt="hexo version"></li>
-<li><p>创建博客工作目录，在该目录中使用cmd 执行下面命令，进行 Hexo 的初始化</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>初始化完成后的博客文件目录如下<br><img src="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/Hexo%20Blog/blogworkspace.PNG?raw=true" alt="blog workspace"></p>
-</li>
-<li><p>此时，Hexo 的工作环境算是创建完成，可以通过以下命令进行本地调试</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s(server)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在本地部署成功之后，可以直接通过浏览器打开 ‘<a href="http://localhost:4000/&#39;，会出现下图初始页面" target="_blank" rel="noopener">http://localhost:4000/&#39;，会出现下图初始页面</a><br><img src="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/Hexo%20Blog/bloginitialpage.PNG?raw=true" alt="hexo initial page"></p>
-</li>
-</ol>
-<h2 id="Hexo-amp-amp-Github"><a href="#Hexo-amp-amp-Github" class="headerlink" title="Hexo &amp;&amp; Github"></a>Hexo &amp;&amp; Github</h2><h3 id="Github仓库创建"><a href="#Github仓库创建" class="headerlink" title="Github仓库创建"></a>Github仓库创建</h3><p>关于 Github 相信各位猿们一定不陌生，假如有没接触过的或者了解不是很深的，可以参考一下这个小姐姐<br>生动形象的描述<a href="https://www.zhihu.com/question/20070065" target="_blank" rel="noopener">Github是什么？</a><br>了解完 Github 之后，接下来我们需要建立本地 Hexo 工作目录与远程 Github 仓库之间的联系</p>
-<ol>
-<li>注册一个 Github账号<br><img src="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/Hexo%20Blog/signupgithub.PNG?raw=true" alt="signupgithub"></li>
-<li>创建一个 Github 远程仓库，来存储 Hexo 发布的静态资源，以便可以直接通过访问 Github Page 的方式访问我们的博客<br>这边需要注意的是，这个仓库名必须是 username.github.io 格式。<br>例如我的用户名是 xiaomingpapapa，那么我的博客仓库名得是 xiaomingpapapa.github.io。<br>因为我已经创建了一个同名的仓库，所以下图报错。<br><img src="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/Hexo%20Blog/crategithubrepository.PNG?raw=true" alt="creategighubrepository"><h3 id="建立本地与Github的连接"><a href="#建立本地与Github的连接" class="headerlink" title="建立本地与Github的连接"></a>建立本地与Github的连接</h3></li>
-<li>远程的 Github 博客仓库也准备好了，接下来我们需要建立 本地Hexo博客与远程Github仓库之间的联系了<br>这个时候我们之前安装的 Git客户端派上了用场。<br>首先需要配 SSH 密钥，这个是本地Git与Github通信的暗号，配钥匙的过程大家可以自己了解一下，在这里就不详细说明了<h3 id="远程部署"><a href="#远程部署" class="headerlink" title="远程部署"></a>远程部署</h3></li>
-<li>ssh密钥设置好了之后，这个时候相当于万事具备，只欠东风了。<br>我们再回到之前创建的 hexo 目录，打开 _config.yml配置文件，配置 Hexo的远程部署方式，如下：<br><img src="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/Hexo%20Blog/deploymentconfig.PNG?raw=true" alt="deploymentconfig"></li>
-<li><p>我们在 Hexo工作目录中打开 cmd, 输入以下命令，首先生成本地静态网页资源，存放在 public 文件夹中</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g(generate)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>本地的静态网页也已经准备好了，我们进入最后阶段，输入以下命令将静态网页推送到 远程的Github</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d(deploy)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>验收阶段，在浏览器输入你之前在 Github上 创建的博客仓库名称，出现博客页面就证明本次搭建任务初步已经完成<br><img src="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/Hexo%20Blog/githubpage.PNG?raw=true" alt="githubpage"></p>
-</li>
-</ol>
-<h2 id="Hexo-amp-amp-Github-amp-amp-腾讯云域名"><a href="#Hexo-amp-amp-Github-amp-amp-腾讯云域名" class="headerlink" title="Hexo &amp;&amp; Github &amp;&amp; 腾讯云域名"></a>Hexo &amp;&amp; Github &amp;&amp; 腾讯云域名</h2><h3 id="腾讯云域名"><a href="#腾讯云域名" class="headerlink" title="腾讯云域名"></a>腾讯云域名</h3><p>既然是个人博客，怎么能没有属于自己的域名呢，我用的是腾讯云域名解析，当然也有很多相当不错的域名服务</p>
-<ol>
-<li>在腾讯云注册账号之后，选择域名注册<br><img src="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/Hexo%20Blog/buydomainname.PNG?raw=true" alt="buydomainname"></li>
-<li>不同的域名类型价格不太一样，大家按照自己的需求意向进行注册购买<br><img src="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/Hexo%20Blog/registerdomainname.PNG?raw=true" alt="registerdomainname"></li>
-<li>购买完成之后，进行域名设置，需要注意的是，刚买的域名还不能够正常解析，需要通过腾讯云的实名认证<br>以下是我通过实名认证之后的正常页面<br><img src="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/Hexo%20Blog/setupdomainname1.PNG?raw=true" alt="setupdomainname1"></li>
-<li>点击解析，进行域名的解析设置，需要提一下的是记录值填写的是 github blog page 所对应的主机IP地址<br><img src="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/Hexo%20Blog/setupdomainname2.PNG?raw=true" alt="setupdomainname2"></li>
-<li>如果不知道 github blog page 所对应的IP地址，可以通过cmd ping 自己的博客仓库名称<br>例如 ping xiaomingpapap.github.io<br><img src="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/Hexo%20Blog/getgithubpageip.PNG?raw=true" alt="getgithubpageip"></li>
-<li>域名解析设置完成之后，就到了最后的验收阶段了，在浏览器输入自己的域名之后，出现熟悉的博客界面<br><img src="https://github.com/Xiaomingpapapa/Blog-Picture/blob/master/Post%20Picture/Hexo%20Blog/testdomianname.PNG?raw=true" alt="testdomainname"></li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -642,166 +472,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/05/Markdown/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Dick Chen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://img.mp.itc.cn/upload/20170422/9730ea5933ee4fafbd5197004a2fd42c_th.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Attack On Titan">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/05/Markdown/" itemprop="url">学习 Markdown 语法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-05T14:31:43+08:00">
-                2018-02-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/学习/" itemprop="url" rel="index">
-                    <span itemprop="name">学习</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2018/02/05/Markdown/" class="leancloud_visitors" data-flag-title="学习 Markdown 语法">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>本次学习 markdown 语法 在此测试一下。参考<a href="http://wowubuntu.com/markdown/basic.html" target="_blank" rel="noopener">链接</a></p>
-<h2 id="Markdown-学习"><a href="#Markdown-学习" class="headerlink" title="Markdown 学习"></a>Markdown 学习</h2><h3 id="Markdown-语法"><a href="#Markdown-语法" class="headerlink" title="Markdown 语法"></a>Markdown 语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ 这是代码块 ‘Hello World’</span><br></pre></td></tr></table></figure>
-<h3 id="Markdown-语法-1"><a href="#Markdown-语法-1" class="headerlink" title="Markdown 语法"></a>Markdown 语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">这也是代码块 &apos;Hello World x 2&apos; </span><br><span class="line">这也是代码块 &apos;Hello World x 2&apos;</span><br></pre></td></tr></table></figure>
-<h3 id="图片测试"><a href="#图片测试" class="headerlink" title="图片测试"></a>图片测试</h3><p><img src="http://p3pq0ixry.bkt.clouddn.com/318743-140421213T910.jpg" alt="Picture"></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -809,6 +484,17 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
 
         </div>
         
@@ -829,8 +515,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -885,6 +580,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#TCP-IP协议族"><span class="nav-number">1.</span> <span class="nav-text">TCP/IP协议族</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#局域网-村民通信"><span class="nav-number">2.</span> <span class="nav-text">局域网-村民通信</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下面引入两个计算机网络分层"><span class="nav-number">2.1.</span> <span class="nav-text">下面引入两个计算机网络分层</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#互联网-走向城市"><span class="nav-number">3.</span> <span class="nav-text">互联网-走向城市</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下面引入了网络层概念"><span class="nav-number">3.1.</span> <span class="nav-text">下面引入了网络层概念</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#互联网-可靠传输"><span class="nav-number">4.</span> <span class="nav-text">互联网-可靠传输</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#传输层"><span class="nav-number">4.1.</span> <span class="nav-text">传输层</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传输层的协议"><span class="nav-number">4.2.</span> <span class="nav-text">传输层的协议</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#互联网-应用层标准化"><span class="nav-number">5.</span> <span class="nav-text">互联网-应用层标准化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结归纳"><span class="nav-number">6.</span> <span class="nav-text">总结归纳</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1025,6 +736,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1076,6 +791,30 @@
       </style>
     
 
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'Xiaomingpapapa',
+            repo: 'Blog-s-Comment',
+            
+            lang: "zh-Hans" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'db67e040ffe9ebbe75b2d4bae7e8dcbd94e1664c',
+            
+                client_id: 'd508bdac6816ea988d16'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
     
 
 
